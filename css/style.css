@@ -12,7 +12,7 @@
   margin-left: 25px;
 }
 .navbar-brand {
-  font-size: 1.5rem;
+  font-size: 30px;
   font-weight: 700;
 }
 .bottom-navbar .nav-link {
@@ -23,6 +23,7 @@
   border-radius: 15px;
   padding: 20px;
   margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); /* Tao bong cho no dep */
 }
 .news-card img {
   width: 100%;
@@ -32,4 +33,44 @@
 }
 .news-card p {
   text-align: justify;
+  padding-top: 15px;
+}
+.top-navbar {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.bottom-navbar {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 25px;
+}
+.news-card h5 {
+  font-size: 22px;
+  font-weight: 675;
+}
+.big-title {
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  font-weight: 750;
+}
+
+.featured-section {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.news-card {
+  height: 100%;
+  padding-bottom: 40px;
+}
+.today-news-card {
+  display: flex;
+}
+.today-news-card img {
+  border-radius: 15px;
+
+  width: 180px;
+  height: 100px;
+  object-fit: cover;
+}
+.featured-section-today-news {
 }
