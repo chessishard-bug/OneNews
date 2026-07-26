@@ -1,0 +1,48 @@
+.big-title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 30px;
+  /* padding-top: 50px; */
+}
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 70vh;
+}
+
+.register-card {
+  width: 450px;
+  padding: 35px;
+  font-weight: 500;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.top-navbar {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.bottom-navbar {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 25px;
+}
+.top-container {
+  display: flex;
+  align-items: center;
+}
+.top-navbar form {
+  margin-left: auto;
+}
+.navbar-brand {
+  font-size: 30px;
+  font-weight: 700;
+}
+/* .register-card input[type="text"],
+.register-card input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+} */

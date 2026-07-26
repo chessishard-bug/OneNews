@@ -16,20 +16,20 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary top-navbar">
-      <div class="container-fluid top-container">
+      <div class="container top-container">
         <a class="navbar-brand" href="#">OneNews</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarTop"
+          data-bs-target="#top-navbar"
           aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTop">
+        <div class="collapse navbar-collapse" id="top-navbar">
           <form class="d-flex" role="search">
             <input
               class="form-control me-2"
@@ -41,32 +41,32 @@
           </form>
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="./login.html">Đăng nhập</a>
+              <a class="nav-link" href="login.html">Đăng nhập</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Đăng kí</a>
+              <a class="nav-link" href="register.html">Đăng kí</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <nav class="navbar navbar-expand-lg bg-body-tertiary bottom-navbar">
-      <div class="container-fluid">
+      <div class="container">
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarBottom"
+          data-bs-target="#bottom-navbar"
           aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarBottom">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse bottom-menu" id="bottom-navbar">
+          <ul class="navbar-nav gap-5">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html"
+              <a class="nav-link active" aria-current="page" href="index.html"
                 >Trang chủ</a
               >
             </li>
@@ -101,73 +101,174 @@
       <div class="container">
         <div class="row g-4">
           <div class="col-md-4">
-            <div class="news-card">
-              <h5>Thế giới mất 14 triệu việc làm trong 5 năm tới</h5>
-              <img
-                src="https://i1-vnexpress.vnecdn.net/2023/05/25/t1-1518-1685000776.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=qY8xl9XX7pKPKqCJF2SkiA"
-                alt="Hình ảnh tin tức"
-              />
-              <p>
-                Công nghệ sẽ tạo ra sự xáo trộn về cấu trúc, với một phần tư số
-                công ty sụt giảm việc làm do áp dụng công nghệ mới và hơn một
-                nửa số công ty tăng trưởng việc làm.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="news-card">
-              <h5>
-                Cơ hội ngành Công nghệ kỹ thuật hóa học trong 5 năm tới ra sao?
-              </h5>
-              <img
-                src="https://i1-vnexpress.vnecdn.net/2025/02/14/openid1739527950-1739527977-17-5970-1281-1739528077.png?w=300&h=180&q=100&dpr=1&fit=crop&s=qEc7seR2MqCicQV2XGVvdw"
-                alt="Hình ảnh tin tức"
-              />
-              <p>
-                Em nghe nói hiện ngành Công nghệ kỹ thuật hóa học vẫn cần người,
-                nhưng không biết 5 năm tới ra sao?
-              </p>
-            </div>
+            <a href="./pages/hotnews1.html" class="news-link">
+              <div class="news-card">
+                <h5>Thế giới mất 14 triệu việc làm trong 5 năm tới</h5>
+                <img
+                  src="https://i1-vnexpress.vnecdn.net/2023/05/25/t1-1518-1685000776.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=qY8xl9XX7pKPKqCJF2SkiA"
+                  alt="Hình ảnh tin tức"
+                />
+                <p>
+                  Công nghệ sẽ tạo ra sự xáo trộn về cấu trúc, với một phần tư
+                  số công ty sụt giảm việc làm do áp dụng công nghệ mới và hơn
+                  một nửa số công ty tăng trưởng việc làm.
+                </p>
+              </div>
+            </a>
           </div>
           <div class="col-md-4">
-            <div class="news-card">
-              <h5>
-                Nhu cầu AI có thể khiến mạng 5G nhiều quốc gia phải thiết kế lại
-              </h5>
-              <img
-                src="https://i1-vnexpress.vnecdn.net/2026/07/17/lq-1784221262-4254-1784221320.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=gFScLTkv0cEklNp2REiIIQ"
-                alt="Hình ảnh tin tức"
-              />
-              <p>
-                Nhu cầu sử dụng AI đòi hỏi đường tải lên băng thông lớn, trong
-                khi phần lớn mạng 5G hiện chỉ dành khoảng 10% cho đường tải lên.
-              </p>
-            </div>
+            <a href="./pages/hotnews2.html" class="news-link">
+              <div class="news-card">
+                <h5>
+                  OpenAI 'mất một tuần mới phát hiện' AI thoát vòng kiểm soát
+                </h5>
+                <img
+                  src="https://i1-vnexpress.vnecdn.net/2026/07/25/openai1-jpg-1784953926-1121-1784953954.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=kcgzT8L6jI_Ac4iF4Z-FTQ"
+                  alt="Hình ảnh tin tức"
+                />
+                <p>
+                  Mô hình của OpenAI được cho là xâm nhập hệ thống Hugging Face
+                  trong nhiều ngày không ai hay biết, và chỉ bị phát hiện khi
+                  mối đe dọa đã được kiểm soát.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="./pages/hotnews3.html" class="news-link">
+              <div class="news-card">
+                <h5>
+                  Nhu cầu AI có thể khiến mạng 5G nhiều quốc gia phải thiết kế
+                  lại
+                </h5>
+                <img
+                  src="https://i1-vnexpress.vnecdn.net/2026/07/17/lq-1784221262-4254-1784221320.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=gFScLTkv0cEklNp2REiIIQ"
+                  alt="Hình ảnh tin tức"
+                />
+                <p>
+                  Nhu cầu sử dụng AI đòi hỏi đường tải lên băng thông lớn, trong
+                  khi phần lớn mạng 5G hiện chỉ dành khoảng 10% cho đường tải
+                  lên.
+                </p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
     <h3 class="big-title">Tin tức hôm nay</h3>
 
-    <section class="featured-section-today-news">
+    <section class="today-news-section">
       <div class="container">
         <div class="row g-4">
           <div class="col-md-8">
-            <div class="today-news-card">
-              <img
-                src="https://i1-vnexpress.vnecdn.net/2026/07/15/lq02525-1784088977-9198-1784089257.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=jlE89_7iMdO0e0H_1v5bbw"
-                alt="Hình ảnh tin tức"
-              />
-              <h3>Người dùng phàn nàn mô hình của OpenAI tự xóa dữ liệu</h3>
-            </div>
+            <a href="./pages/todaynews1.html" class="news-link">
+              <div class="today-news-card-left">
+                <img
+                  src="https://i1-vnexpress.vnecdn.net/2026/07/15/lq02525-1784088977-9198-1784089257.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=jlE89_7iMdO0e0H_1v5bbw"
+                  alt="Hình ảnh tin tức"
+                />
+                <div class="today-news-card-left-content">
+                  <h4>Người dùng phàn nàn mô hình của OpenAI tự xóa dữ liệu</h4>
+                  <p>
+                    Một số người dùng cho biết GPT-5.6 Sol, mô hình chủ lực mới
+                    của OpenAI, tự động xóa các tệp tin mà không hỏi ý kiến
+                    trước.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="./pages/todaynews2.html" class="news-link">
+              <div class="today-news-card-left">
+                <img
+                  src="https://i1-vnexpress.vnecdn.net/2026/07/10/dsc09779-jpg-1783657538-7250-1783658179.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=VNLLoVplb3FZbqO_7Ojz9Q"
+                  alt="Hình ảnh tin tức"
+                />
+                <div class="today-news-card-left-content">
+                  <h4>OpenAI ra tác nhân mới và GPT-5.6</h4>
+                  <p>
+                    OpenAI công bố tác nhân dành cho nhân viên văn phòng ChatGPT
+                    Work, vận hành bằng GPT-5.6 - mô hình AI tiên tiến nhất của
+                    công ty.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="./pages/todaynews3.html" class="news-link">
+              <div class="today-news-card-left">
+                <img
+                  src="https://i1-vnexpress.vnecdn.net/2026/06/27/openai-thach-thuc-1752491351-2-1272-7134-1782539191.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=gZHUJaA8BL1FWjQIsxDMJg"
+                  alt="Hình ảnh tin tức"
+                />
+                <div class="today-news-card-left-content">
+                  <h4>OpenAI hoãn phát hành GPT-5.6</h4>
+                  <p>
+                    Theo yêu cầu từ chính phủ Mỹ, OpenAI cho biết sẽ hoãn triển
+                    khai rộng rãi mô hình mới GPT-5.6, chỉ cho phép nhóm nhỏ đối
+                    tác truy cập.
+                  </p>
+                </div>
+              </div>
+            </a>
           </div>
 
           <div class="col-md-4">
-            <div class="today-news-card"></div>
+            <div class="sidebar">
+              <h4 class="big-title">Được xem nhiều nhất</h4>
+              <a href="./pages/todaynews3.html" class="news-link">
+                <div class="today-news-card-right">
+                  <div class="today-news-card-right-content">
+                    <h4>OpenAI hoãn phát hành GPT-5.6</h4>
+                    <h6>🕒 21/07 - 100+ lượt xem</h6>
+                  </div>
+                </div>
+              </a>
+              <a href="./pages/todaynews2.html" class="news-link">
+                <div class="today-news-card-right">
+                  <div class="today-news-card-right-content">
+                    <h4>OpenAI ra tác nhân mới và GPT-5.6</h4>
+                    <h6>🕒 21/07 - 91 lượt xem</h6>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <footer>
+      <div class="container">
+        <div class="row footer-row justify-content-center">
+          <div class="col-md-4">
+            <h4 class="footer-logo">OneNews</h4>
+            <h5 class="footer-description">
+              "Website tin tức công nghệ, AI và Game."
+            </h5>
+          </div>
+          <div class="col-md-4">
+            <h4>Liên kết</h4>
+            <a href="./index.html">Trang chủ</a> <br />
+            <a href="#">Danh mục</a> <br />
+            <a href="#">Liên hệ</a> <br />
+            <a href="#">Giới thiệu</a> <br />
+          </div>
+          <div class="col-md-4">
+            <h4>Liên hệ</h4>
+            <p><i class="fa-solid fa-envelope"></i> onenews@gmail.com</p>
+            <p><i class="fa-brands fa-facebook"></i> OneNews</p>
+            <p><i class="fa-brands fa-github"></i> chessishard-bug</p>
+            <p>
+              Địa chỉ:<br />
+              1 Tô Ký, Trung Mỹ Tây,<br />
+              Quận 12, TP.HCM
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <h5 class="copyrights">©2026 OneNews. All rights reserved.</h5>
+      </div>
+    </footer>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </html>
