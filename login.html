@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/loginstyle.css" />
     <script
       src="https://kit.fontawesome.com/b47a1c1ea4.js"
@@ -15,9 +16,12 @@
     ></script>
   </head>
   <body>
+    <button id="backToTop" title="Lên đầu trang">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
     <nav class="navbar navbar-expand-lg bg-body-tertiary top-navbar">
       <div class="container top-container">
-        <a class="navbar-brand" href="#">OneNews</a>
+        <a class="navbar-brand" href="./index.html">OneNews</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -30,7 +34,11 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="top-navbar">
-          <form class="d-flex" role="search">
+          <form
+            class="d-flex"
+            role="search"
+            onsubmit="return chucNangPhatTrien();"
+          >
             <input
               class="form-control me-2"
               type="search"
@@ -39,12 +47,18 @@
             />
             <button class="btn btn-outline-success" type="submit">Tìm</button>
           </form>
+
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="./login.html">Đăng nhập</a>
+              <button id="button-lightDark" class="btn btn-outline-dark">
+                🌙
+              </button>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./register.html">Đăng kí</a>
+              <a class="nav-link" href="login.html">Đăng nhập</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Đăng kí</a>
             </li>
           </ul>
         </div>
@@ -64,9 +78,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse bottom-menu" id="bottom-navbar">
-          <ul class="navbar-nav gap-5">
+          <ul class="navbar-nav gap-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html"
+              <a class="nav-link active" aria-current="page" href="index.html"
                 >Trang chủ</a
               >
             </li>
@@ -87,10 +101,10 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Liên hệ</a>
+              <a class="nav-link" href="./contact.html">Liên hệ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Giới thiệu</a>
+              <a class="nav-link" href="./about.html">Giới thiệu</a>
             </li>
           </ul>
         </div>
@@ -139,5 +153,6 @@
       </div>
     </div>
   </body>
+  <script src="./js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </html>

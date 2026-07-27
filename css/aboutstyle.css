@@ -1,0 +1,39 @@
+.top-navbar {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.bottom-navbar {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 25px;
+}
+.top-container {
+  display: flex;
+  align-items: center;
+}
+.top-navbar form {
+  margin-left: auto;
+}
+.navbar-brand {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.about-card {
+  transition: 0.3s;
+  height: 100%;
+  padding-bottom: 40px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); /* Tao bong cho no dep */
+}
+.about-card:hover {
+  transition: 0.3s;
+  transform: translateY(-5px);
+}
+.all-about-card {
+  margin-bottom: 30px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e5e5e5;
+}

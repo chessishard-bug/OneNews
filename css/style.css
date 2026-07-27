@@ -33,11 +33,13 @@
   height: 220px;
   object-fit: cover;
   border-radius: 12px;
+  transition: 0.3s;
 }
 .news-card p {
   text-align: justify;
   padding-top: 15px;
 }
+
 .top-navbar {
   border-bottom: 1px solid #e5e5e5;
 }
@@ -92,6 +94,8 @@ footer .col-md-4 {
   text-align: justify;
 }
 .today-news-card-left {
+  overflow: hidden;
+
   transition: 0.3s;
   display: flex;
   border: 1px solid #ddd;
@@ -103,9 +107,10 @@ footer .col-md-4 {
 .today-news-card-left:hover,
 .today-news-card-right:hover,
 .news-card:hover {
-  transform: translateY(-6px);
+  /* transform: translateY(-6px); */
   background: #f8f9fa;
   cursor: pointer;
+  transform: scale(1.08);
 }
 .today-news-section {
   transition: 0.3s;
@@ -127,6 +132,8 @@ footer .col-md-4 {
   text-align: justify;
 }
 .today-news-card-right {
+  overflow: hidden;
+
   transition: 0.3s;
   display: flex;
   border: 1px solid #ddd;
@@ -135,6 +142,7 @@ footer .col-md-4 {
   margin-bottom: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); /* Tao bong cho no dep */
 }
+
 .sidebar {
   position: sticky;
   top: 20px;
@@ -195,11 +203,23 @@ footer i {
 }
 /* Responsive */
 
+@media (max-width: 991.98px) {
+  .top-navbar form {
+    display: none;
+  }
+
+  .top-navbar .navbar-nav {
+    display: none;
+  }
+
+  .top-navbar .navbar-toggler {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   /* .bottom-menu {
     padding-left: 0;
   } */
-
   .top-navbar form {
     margin: 15px 0;
   }
@@ -207,6 +227,7 @@ footer i {
   .top-navbar ul {
     margin-left: 0;
   }
+
   .today-news-card-left {
     flex-direction: column;
   }
@@ -238,4 +259,133 @@ footer i {
   .today-news-card-left-content h4 {
     font-size: 22px;
   }
+}
+#backToTop {
+  transition: 0.2s;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: none;
+  font-size: 20px;
+  z-index: 999;
+}
+#backToTop:hover {
+  background: gray;
+  color: white;
+  transform: translateY(-5px);
+}
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode .news-card,
+body.dark-mode .today-news-card-left,
+body.dark-mode .today-news-card-right,
+body.dark-mode .login-card,
+body.dark-mode .register-card {
+  background: #1f1f1f;
+  color: white;
+  border-color: #444;
+}
+
+body.dark-mode .navbar,
+body.dark-mode footer {
+  background: #1b1b1b !important;
+}
+body.dark-mode .navbar-brand,
+body.dark-mode .nav-link,
+body.dark-mode .dropdown-toggle {
+  color: white !important;
+}
+
+body.dark-mode .dropdown-menu {
+  background: #222;
+  border: 1px solid #444;
+}
+
+body.dark-mode .dropdown-item {
+  color: white;
+}
+
+body.dark-mode .dropdown-item:hover {
+  background: #333;
+}
+body.dark-mode .form-control {
+  background: #2b2b2b;
+  color: white;
+  border: 1px solid #555;
+}
+
+body.dark-mode .form-control::placeholder {
+  color: #bbb;
+}
+body.dark-mode .btn-outline-success {
+  color: #7dff7d;
+  border-color: #7dff7d;
+}
+
+body.dark-mode .btn-outline-success:hover {
+  background: #7dff7d;
+  color: black;
+}
+body.dark-mode .news-card:hover,
+body.dark-mode .today-news-card-left:hover,
+body.dark-mode .today-news-card-right:hover {
+  background: #2c2c2c;
+}
+body.dark-mode #button-lightDark {
+  border-color: white;
+  color: white;
+}
+body.dark-mode #backToTop {
+  background: #2b2b2b;
+  color: white;
+  border: 1px solid #555;
+}
+
+body.dark-mode #backToTop:hover {
+  background: #444;
+}
+body.dark-mode p,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode label {
+  color: white;
+}
+body.dark-mode .top-navbar,
+body.dark-mode .bottom-navbar,
+body.dark-mode .featured-section,
+body.dark-mode .today-news-section,
+body.dark-mode .footer-bottom {
+  border-color: #444;
+}
+/* body.dark-mode footer a {
+  color: #ddd;
+}
+
+body.dark-mode footer a:hover {
+  color: #4fc3f7;
+} */
+body.dark-mode .today-news-card-left-content p,
+body.dark-mode .today-news-card-right-content h6 {
+  color: #ccc;
+}
+body.dark-mode input {
+  background: #2b2b2b;
+  color: white;
+  border: 1px solid #555;
+}
+body.dark-mode .navbar-toggler {
+  border-color: white;
+}
+body.dark-mode .navbar-toggler-icon {
+  filter: invert(1);
 }
