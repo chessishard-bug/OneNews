@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sản phẩm cuối khóa</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/b47a1c1ea4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <button id="backToTop" title="Lên đầu trang">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary top-navbar">
+      <div class="container top-container">
+        <a class="navbar-brand" href="../index.html">
+          <i class="fa-solid fa-newspaper me-2"></i>OneNews
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#top-navbar"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="top-navbar">
+          <form
+            class="d-flex"
+            role="search"
+            onsubmit="return chucNangPhatTrien();"
+          >
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Tìm kiếm..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <ul
+            class="navbar-nav ms-auto d-flex align-items-center gap-2 ul-3items"
+          >
+            <li class="nav-item">
+              <button id="button-lightDark" class="btn btn-outline-dark">
+                🌙
+              </button>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../login.html"
+                ><i class="fa-solid fa-right-to-bracket me-1"></i> Đăng nhập</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../register.html">
+                <i class="fa-solid fa-user-plus me-1"></i> Đăng kí</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bottom-navbar">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#bottom-navbar"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bottom-menu" id="bottom-navbar">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html"
+                ><i class="fa-solid fa-house me-1"></i> Trang chủ</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="../category/latest.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-list me-1"></i> Danh mục
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../category/latest.html"
+                    ><i class="fa-solid fa-bolt me-2 text-warning"></i>Tin mới
+                    nhất</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../category/ai.html"
+                    ><i class="fa-solid fa-robot me-2 text-info"></i>AI & Công
+                    nghệ</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../category/game.html"
+                    ><i class="fa-solid fa-gamepad me-2 text-success"></i
+                    >Game</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact.html"
+                ><i class="fa-solid fa-envelope me-1"></i> Liên hệ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html"
+                ><i class="fa-solid fa-circle-info me-1"></i> Giới thiệu</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container my-5">
+      <h1 class="mb-3">Điều gì xảy ra với sức khỏe nếu chơi game quá nhiều?</h1>
+
+      <p class="text-secondary">
+        Đăng ngày 17/07/2026 - Tác giả: Thúy Quỳnh (VNExpress)
+      </p>
+      <p>
+        Chơi game nhiều khiến sức khỏe thể chất và tinh thần đều bị ảnh hưởng,
+        thậm chí dẫn đến trầm cảm, tự sát, giảm khả năng sinh lý.
+      </p>
+      <p>
+        Theo quy định hiện hành, người dưới 18 tuổi được chơi game tối đa 60
+        phút với mỗi trò chơi và không quá 180 phút mỗi ngày đối với tất cả trò
+        chơi. Dự thảo mới đề xuất rút ngắn thời gian này còn 60 phút mỗi ngày,
+        với người chơi là trẻ em dưới 16 tuổi.
+      </p>
+      <p>
+        Trò chơi điện tử hiện là một trong những hình thức giải trí phổ biến
+        nhất toàn cầu. Cùng với đó, tỷ lệ nghiện game cũng tăng ở mức 8,5% đối
+        với nam và 3,5% đối với nữ trong năm 2022. Tỷ lệ nghiện ở châu Á cao
+        nhất (6,3%), Bắc Mỹ (3,6%), châu Âu (2,7%), theo thống kê từ Viện Sức
+        khỏe Tâm thần, Bệnh viện Bạch Mai. Hiện chưa có thống kê chính thức về
+        số người nghiện game online ở Việt Nam. Nhưng một nghiên cứu của Viện
+        Sức khỏe Tâm thần cho thấy nhóm tuổi 10-24 điều trị vì nghiện Internet,
+        game chiếm 43%.
+      </p>
+      <p>
+        Tiến sĩ, bác sĩ Trần Thị Hồng Thu, nguyên Phó Giám đốc Bệnh viện Tâm
+        thần ban ngày Mai Hương, cho biết khi chơi game, não tiết ra lượng lớn
+        dopamine - chất dẫn truyền thần kinh tạo cảm giác khoái cảm và hưng
+        phấn. Càng chơi nhiều, não quen với mức dopamine cao. Khi ngừng chơi,
+        lượng dopamine giảm gây cảm giác trống rỗng, mệt mỏi, bồn chồn, thèm
+        chơi trở lại. Đây là cơ chế tương tự các dạng nghiện chất khác như rượu,
+        ma túy.
+      </p>
+      <p>
+        Thường xuyên chơi game còn gây buồn chán, bi quan, cảm giác cô đơn, bất
+        an; mất các hứng thú với các thú vui, sở thích cũ, mọi thứ chỉ dồn vào
+        game; dễ cảm thấy bực dọc, cáu gắt, dễ gây gổ dù chỉ những chuyện rất
+        nhỏ. Nhiều người chơi còn rối loạn giấc ngủ; chán ăn, ăn ít, thậm chí có
+        xu hướng muốn bạo lực hoặc tự sát.
+      </p>
+      <p>
+        Nhiều trường hợp chơi game thường xuyên trong nhiều giờ dẫn đến nghiện.
+        Tổ chức Y tế Thế giới (WHO) đưa nghiện Internet, game vào nhóm các rối
+        loạn tâm thần, đặc trưng bởi hành vi chơi dai dẳng, tái diễn. Người
+        nghiện game khó kiểm soát mức độ chơi game (như tần suất, cường độ, thời
+        gian, bối cảnh), thậm chí mất kiểm soát đối với việc chơi game.
+      </p>
+      <p>
+        Các triệu chứng của nghiện game có thể quan sát được như không thể thoát
+        ra được cám dỗ chơi game, có quyết định chơi game hay không, khi nào thì
+        dừng lại... Lúc đầu định chơi 1-2 tiếng, về sau thành 7-8 tiếng. Khi
+        không được chơi, bệnh nhân có biểu hiện cáu gắt, chửi bới, phản ứng mạnh
+        mẽ với người thân, thậm chí có trường hợp dọa tự sát.
+      </p>
+      <p>
+        Triệu chứng thứ hai giống trầm cảm. Người nghiện game khí sắc giảm, mất
+        quan tâm hứng thú với mọi thứ, người mệt mỏi, ăn ngủ thất thường, gây
+        suy giảm chức năng nghề nghiệp, học tập, chức năng giao tiếp xã hội đáng
+        kể. Khi hỏi trực tiếp người bệnh về việc chơi game, họ thường có xu
+        hướng nói tránh về thời gian sử dụng game của mình.
+      </p>
+      <p>
+        Một người nghiện game sẽ dẫn tới việc thay đổi tâm thần vận động, bao
+        gồm kích động, vận động chậm, chậm chạp khi giao tiếp, giọng nói nhỏ, số
+        lượng ngôn ngữ ít, nội dung nghèo nàn, thậm chí không nói. Ngoài ra bệnh
+        nhân còn rối loạn trí nhớ.
+      </p>
+      <img
+        src="https://i1-suckhoe.vnecdn.net/2026/07/24/gamerscaled-1653959090-7760-16-1208-5922-1784884534.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=mkaLxwbsRWwSw0uhXDJslQ"
+        class="img-fluid rounded mb-4"
+        alt="Tin tức"
+      />
+      <p>
+        Bác sĩ Calvin Q Trịnh, Giám đốc Đơn vị Phục hồi chức năng và hình thể
+        chuẩn Mỹ (HMR), cho biết chơi game ảnh hưởng đến sức khỏe thể chất, bao
+        gồm hội chứng ống cổ tay, đau tê các ngón tay, làm giảm phạm vi chuyển
+        động của cổ tay và khiến tay bị đau. Một số tình trạng khác như phồng
+        rộp da, chai tay và tê tay (bệnh thần kinh ngoại biên) hoặc thậm chí
+        xuất hiện cục máu đông.
+      </p>
+      <p>
+        Viêm gân phát sinh khi hoạt động quá mức, các mô liên kết xương và cơ bị
+        viêm, tay bạn có thể bị đau nhức và sưng tấy, có thể gây ảnh hưởng đến
+        độ linh hoạt của tay khi chơi game. Đặc biệt, khớp ngón tay cái cũng rất
+        dễ bị chấn thương khi chơi game. Chuyển động lặp đi lặp lại với cường độ
+        cao khi chơi game có thể làm viêm cơ, đau cơ, tổn thương cơ, đau dọc
+        theo chiều dài cơ. Lúc này, bạn có thể sẽ cảm thấy đau ở khuỷu tay, cẳng
+        tay, và có thể lan xuống toàn bộ cánh tay.
+      </p>
+      <p>
+        Đau cơ bắp tay thường xuyên xảy ra ở những người chơi game trên PC, do
+        phần cơ này thường bị sử dụng quá độ. Nếu không khắc phục tình trạng
+        này, bạn có thể bị thương và các chấn thương có thể trở nên trầm trọng
+        hơn vì nhiều lý do.
+      </p>
+      <p>
+        Việc ngước lên và cúi xuống liên tục, tư thế ngồi xấu, ngồi lâu và không
+        hoạt động, thiết kế của bàn làm việc không đúng có thể gây căng thẳng
+        cho lưng và cổ. Tình trạng này trở nên trầm trọng hơn khi bạn phải làm
+        những việc đó liên tục, dẫn tới hiện tượng mất cân bằng cơ thân trên
+        trầm trọng, bệnh sẽ tiến triển sang thoái hóa, thoát vị đĩa đệm.
+      </p>
+      <p>
+        Chơi game có thể giúp giảm căng thẳng trong thời gian ngắn, nhưng lạm
+        dụng game lại có thể gây ra các vấn đề liên quan đến sức khỏe sinh lý.
+        Một nghiên cứu từ American Journal of Men's Health chỉ ra rằng những
+        người chơi game quá mức thường có mức testosterone thấp hơn so với những
+        người tham gia các hoạt động thể chất. Ngồi lâu, thiếu vận động, và căng
+        thẳng tâm lý từ các trò chơi có thể gây ra sự suy giảm ham muốn và rối
+        loạn chức năng cương dương. Ngoài ra, dành quá nhiều thời gian cho trò
+        chơi điện tử có thể gây ra rối loạn giấc ngủ, dẫn đến mệt mỏi, căng
+        thẳng và giảm khả năng tình dục.
+      </p>
+      <p>
+        Các chuyên gia khuyến cáo người chơi game nên có giới hạn và không để
+        ảnh hưởng đến cuộc sống, chỉ nên dành 30-60 phút mỗi ngày. Điều quan
+        trọng là thời gian chơi game có đang kiểm soát bạn hay không. Ví dụ:
+        Luôn nghĩ đến game khi không chơi, bỏ bê việc học hay các mối quan hệ để
+        chơi, mất ngủ, muốn giảm thời gian nhưng không được.
+      </p>
+      <a href="../index.html" class="btn btn-outline-primary back-home">
+        Quay về trang chủ
+      </a>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row footer-row justify-content-center">
+          <div class="col-md-4">
+            <h4 class="footer-logo">OneNews</h4>
+            <h5 class="footer-description">
+              "Website tin tức công nghệ, AI và Game."
+            </h5>
+          </div>
+          <div class="col-md-4">
+            <h4>Liên kết</h4>
+            <a href="../index.html">Trang chủ</a> <br />
+            <a href="../category/latest.html">Danh mục</a> <br />
+            <a href="../contact.html">Liên hệ</a> <br />
+            <a href="../about.html">Giới thiệu</a> <br />
+          </div>
+          <div class="col-md-4">
+            <h4>Liên hệ</h4>
+            <p><i class="fa-solid fa-envelope"></i> onenews@gmail.com</p>
+            <p><i class="fa-brands fa-facebook"></i> OneNews</p>
+            <p><i class="fa-brands fa-github"></i> chessishard-bug</p>
+            <p>
+              Địa chỉ:<br />
+              1 Tô Ký, Trung Mỹ Tây,<br />
+              Quận 12, TP.HCM
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <h5 class="copyrights">©2026 OneNews. All rights reserved.</h5>
+      </div>
+    </footer>
+  </body>
+  <script src="../js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</html>

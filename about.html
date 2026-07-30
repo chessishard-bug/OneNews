@@ -21,7 +21,9 @@
     </button>
     <nav class="navbar navbar-expand-lg bg-body-tertiary top-navbar">
       <div class="container top-container">
-        <a class="navbar-brand" href="./index.html">OneNews</a>
+        <a class="navbar-brand" href="./index.html">
+          <i class="fa-solid fa-newspaper me-2"></i>OneNews
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -45,20 +47,27 @@
               placeholder="Tìm kiếm..."
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">Tìm</button>
+            <button class="btn btn-outline-success" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
           </form>
-
-          <ul class="navbar-nav ms-auto">
+          <ul
+            class="navbar-nav ms-auto d-flex align-items-center gap-2 ul-3items"
+          >
             <li class="nav-item">
               <button id="button-lightDark" class="btn btn-outline-dark">
                 🌙
               </button>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login.html">Đăng nhập</a>
+              <a class="nav-link" href="login.html"
+                ><i class="fa-solid fa-right-to-bracket me-1"></i> Đăng nhập</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="register.html">Đăng kí</a>
+              <a class="nav-link" href="register.html">
+                <i class="fa-solid fa-user-plus me-1"></i> Đăng kí</a
+              >
             </li>
           </ul>
         </div>
@@ -80,31 +89,50 @@
         <div class="collapse navbar-collapse bottom-menu" id="bottom-navbar">
           <ul class="navbar-nav gap-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Trang chủ</a
+              <a class="nav-link" href="index.html"
+                ><i class="fa-solid fa-house me-1"></i> Trang chủ</a
               >
             </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="#"
+                href="./category/latest.html"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Danh mục
+                <i class="fa-solid fa-list me-1"></i> Danh mục
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Tin mới</a></li>
-                <li><a class="dropdown-item" href="#">AI</a></li>
-                <li><a class="dropdown-item" href="#">Game</a></li>
+                <li>
+                  <a class="dropdown-item" href="./category/latest.html"
+                    ><i class="fa-solid fa-bolt me-2 text-warning"></i>Tin mới
+                    nhất</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./category/ai.html"
+                    ><i class="fa-solid fa-robot me-2 text-info"></i>AI & Công
+                    nghệ</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./category/game.html"
+                    ><i class="fa-solid fa-gamepad me-2 text-success"></i
+                    >Game</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Liên hệ</a>
+              <a class="nav-link" href="./contact.html"
+                ><i class="fa-solid fa-envelope me-1"></i> Liên hệ</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./about.html">Giới thiệu</a>
+              <a class="nav-link" href="./about.html"
+                ><i class="fa-solid fa-circle-info me-1"></i> Giới thiệu</a
+              >
             </li>
           </ul>
         </div>
@@ -112,7 +140,7 @@
     </nav>
     <div class="container">
       <h2 class="big-title">Giới thiệu OneNews</h2>
-      <div class="row all-about-card">
+      <div class="row g-4 all-about-card">
         <div class="col-md-3">
           <div class="about-card">
             <h4 class="big-title">OneNews</h4>
@@ -161,6 +189,9 @@
             </ul>
           </div>
         </div>
+        <a href="./index.html" class="btn btn-outline-primary back-home">
+          Quay về trang chủ
+        </a>
       </div>
     </div>
     <footer>
@@ -175,9 +206,9 @@
           <div class="col-md-4">
             <h4>Liên kết</h4>
             <a href="./index.html">Trang chủ</a> <br />
-            <a href="#">Danh mục</a> <br />
-            <a href="#">Liên hệ</a> <br />
-            <a href="#">Giới thiệu</a> <br />
+            <a href="./category/latest.html">Danh mục</a> <br />
+            <a href="./contact.html">Liên hệ</a> <br />
+            <a href="./about.html">Giới thiệu</a> <br />
           </div>
           <div class="col-md-4">
             <h4>Liên hệ</h4>

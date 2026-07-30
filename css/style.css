@@ -389,3 +389,10 @@ body.dark-mode .navbar-toggler {
 body.dark-mode .navbar-toggler-icon {
   filter: invert(1);
 }
+body.dark-mode .back-home {
+  color: #66b3ff;
+}
+
+body.dark-mode .back-home:hover {
+  color: white;
+}

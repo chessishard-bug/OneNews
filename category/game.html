@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <script
       src="https://kit.fontawesome.com/b47a1c1ea4.js"
       crossorigin="anonymous"
@@ -20,7 +20,7 @@
     </button>
     <nav class="navbar navbar-expand-lg bg-body-tertiary top-navbar">
       <div class="container top-container">
-        <a class="navbar-brand" href="./index.html">
+        <a class="navbar-brand" href="../index.html">
           <i class="fa-solid fa-newspaper me-2"></i>OneNews
         </a>
         <button
@@ -59,12 +59,12 @@
               </button>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login.html"
+              <a class="nav-link" href="../login.html"
                 ><i class="fa-solid fa-right-to-bracket me-1"></i> Đăng nhập</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="register.html">
+              <a class="nav-link" href="../register.html">
                 <i class="fa-solid fa-user-plus me-1"></i> Đăng kí</a
               >
             </li>
@@ -88,14 +88,14 @@
         <div class="collapse navbar-collapse bottom-menu" id="bottom-navbar">
           <ul class="navbar-nav gap-3">
             <li class="nav-item">
-              <a class="nav-link" href="index.html"
+              <a class="nav-link" href="../index.html"
                 ><i class="fa-solid fa-house me-1"></i> Trang chủ</a
               >
             </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="./category/latest.html"
+                href="latest.html"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -104,19 +104,19 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="./category/latest.html"
+                  <a class="dropdown-item" href="latest.html"
                     ><i class="fa-solid fa-bolt me-2 text-warning"></i>Tin mới
                     nhất</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="./category/ai.html"
+                  <a class="dropdown-item" href="ai.html"
                     ><i class="fa-solid fa-robot me-2 text-info"></i>AI & Công
                     nghệ</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="./category/game.html"
+                  <a class="dropdown-item" href="game.html"
                     ><i class="fa-solid fa-gamepad me-2 text-success"></i
                     >Game</a
                   >
@@ -124,12 +124,12 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./contact.html"
+              <a class="nav-link" href="../contact.html"
                 ><i class="fa-solid fa-envelope me-1"></i> Liên hệ</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./about.html"
+              <a class="nav-link" href="../about.html"
                 ><i class="fa-solid fa-circle-info me-1"></i> Giới thiệu</a
               >
             </li>
@@ -137,78 +137,76 @@
         </div>
       </div>
     </nav>
-    <section class="contact-section my-5">
+    <h3 class="big-title">Tin tức về chủ đề game</h3>
+    <section class="featured-section">
       <div class="container">
-        <h2 class="big-title">Liên hệ</h2>
-        <p class="text-center mb-5">
-          Nếu có góp ý hoặc cần hỗ trợ, hãy gửi thông tin cho chúng tôi.
-        </p>
-
         <div class="row g-4">
-          <div class="col-lg-7">
-            <div class="contact-card p-4">
-              <form>
-                <div class="mb-3">
-                  <label class="form-label">Họ và tên</label>
-                  <input type="text" class="form-control" />
-                </div>
-
-                <div class="mb-3">
-                  <label class="form-label">Email</label>
-                  <input type="email" class="form-control" />
-                </div>
-
-                <div class="mb-3">
-                  <label class="form-label">Tiêu đề</label>
-                  <input type="text" class="form-control" />
-                </div>
-
-                <div class="mb-3">
-                  <label class="form-label">Nội dung</label>
-                  <textarea class="form-control" rows="6"></textarea>
-                </div>
-
-                <button class="btn btn-primary w-100 mb-3">Gửi liên hệ</button>
-                <a
-                  href="./index.html"
-                  class="btn btn-outline-primary back-home"
-                >
-                  Quay về trang chủ
-                </a>
-              </form>
-            </div>
+          <div class="col-md-6">
+            <a href="../pages/gamenews1.html" class="news-link">
+              <div class="news-card">
+                <h5>
+                  Đề xuất giới hạn trẻ chơi game 60 phút mỗi ngày được ủng hộ
+                </h5>
+                <img
+                  src="https://i1-vnexpress.vnecdn.net/2026/07/25/wm1-wm1-tre-choi-game-1784940420-9121-1784941590.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=CI9RofY76vGhpLaZFaqdrQ"
+                  alt="Hình ảnh tin tức"
+                />
+                <p>
+                  Đề xuất giảm thời gian chơi game mỗi ngày của người dưới 16
+                  tuổi đang nhận được nhiều ý kiến đồng tình.
+                </p>
+              </div>
+            </a>
           </div>
-          <div class="col-lg-5">
-            <div class="contact-card p-4 h-100">
-              <h4>Thông tin liên hệ</h4>
-
-              <hr />
-
-              <p>
-                <i class="fa-solid fa-envelope"></i>
-                onenews@gmail.com
-              </p>
-
-              <p>
-                <i class="fa-solid fa-phone"></i>
-                0123 456 789
-              </p>
-
-              <p>
-                <i class="fa-solid fa-location-dot"></i>
-                1 Tô Ký, Trung Mỹ Tây, Quận 12, TP.HCM
-              </p>
-
-              <p>
-                <i class="fa-brands fa-facebook"></i>
-                OneNews
-              </p>
-
-              <p>
-                <i class="fa-brands fa-github"></i>
-                chessishard-bug
-              </p>
-            </div>
+          <div class="col-md-6">
+            <a href="../pages/gamenews2.html" class="news-link">
+              <div class="news-card">
+                <h5>Điều gì xảy ra với sức khỏe nếu chơi game quá nhiều?</h5>
+                <img
+                  src="https://i1-suckhoe.vnecdn.net/2026/07/24/gamerscaled-1653959090-7760-16-1208-5922-1784884534.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=mkaLxwbsRWwSw0uhXDJslQ"
+                  alt="Hình ảnh tin tức"
+                />
+                <p>
+                  Chơi game nhiều khiến sức khỏe thể chất và tinh thần đều bị
+                  ảnh hưởng, thậm chí dẫn đến trầm cảm, tự sát, giảm khả năng
+                  sinh lý.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="../pages/gamenews3.html" class="news-link">
+              <div class="news-card">
+                <h5>Trẻ sa bẫy cờ bạc từ game trên iPad, smartphone</h5>
+                <img
+                  src="https://i1-giadinh.vnecdn.net/2026/05/14/Untitled-1778744566-2722-1778744891.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=dNpbgN4nHDflq59o-kR0eA"
+                  alt="Hình ảnh tin tức"
+                />
+                <p>
+                  Thấy con trai 8 tuổi tiêu 1.000 USD mua vật phẩm ảo sau vài
+                  giờ, anh Daniel Dawson nhận ra "sòng bài" nằm ngay trên chiếc
+                  iPad của đứa trẻ.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="../pages/gamenews4.html" class="news-link">
+              <div class="news-card">
+                <h5>
+                  Dấu ấn OEG Game sau năm đầu gia nhập thị trường phát hành game
+                </h5>
+                <img
+                  src="https://i1-kinhdoanh.vnecdn.net/2026/06/10/Khongcotieueadsd-1781090117-6100-1781090243.png?w=300&h=180&q=100&dpr=1&fit=crop&s=m9-QbNuEZjRKTJMhhDXqwg"
+                  alt="Hình ảnh tin tức"
+                />
+                <p>
+                  OEG Game xây dựng danh mục 18 sản phẩm trên nền tảng di động,
+                  ghi nhận hơn 2 triệu lượt tải và từng bước mở rộng cộng đồng
+                  người chơi thông qua hệ sinh thái giải trí.
+                </p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -225,10 +223,10 @@
           </div>
           <div class="col-md-4">
             <h4>Liên kết</h4>
-            <a href="./index.html">Trang chủ</a> <br />
-            <a href="./category/latest.html">Danh mục</a> <br />
-            <a href="./contact.html">Liên hệ</a> <br />
-            <a href="./about.html">Giới thiệu</a> <br />
+            <a href="../index.html">Trang chủ</a> <br />
+            <a href="../category/latest.html">Danh mục</a> <br />
+            <a href="../contact.html">Liên hệ</a> <br />
+            <a href="../about.html">Giới thiệu</a> <br />
           </div>
           <div class="col-md-4">
             <h4>Liên hệ</h4>
@@ -248,6 +246,6 @@
       </div>
     </footer>
   </body>
-  <script src="./js/script.js"></script>
+  <script src="../js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </html>
