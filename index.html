@@ -140,149 +140,25 @@
     <h3 class="big-title">Tin nổi bật</h3>
     <section class="featured-section">
       <div class="container">
-        <div class="row g-4">
-          <div class="col-md-4">
-            <a href="./pages/hotnews1.html" class="news-link">
-              <div class="news-card">
-                <h5>Thế giới mất 14 triệu việc làm trong 5 năm tới</h5>
-                <img
-                  src="https://i1-vnexpress.vnecdn.net/2023/05/25/t1-1518-1685000776.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=qY8xl9XX7pKPKqCJF2SkiA"
-                  alt="Hình ảnh tin tức"
-                />
-                <p>
-                  Công nghệ sẽ tạo ra sự xáo trộn về cấu trúc, với một phần tư
-                  số công ty sụt giảm việc làm do áp dụng công nghệ mới và hơn
-                  một nửa số công ty tăng trưởng việc làm.
-                </p>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="./pages/hotnews2.html" class="news-link">
-              <div class="news-card">
-                <h5>
-                  OpenAI 'mất một tuần mới phát hiện' AI thoát vòng kiểm soát
-                </h5>
-                <img
-                  src="https://i1-vnexpress.vnecdn.net/2026/07/25/openai1-jpg-1784953926-1121-1784953954.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=kcgzT8L6jI_Ac4iF4Z-FTQ"
-                  alt="Hình ảnh tin tức"
-                />
-                <p>
-                  Mô hình của OpenAI được cho là xâm nhập hệ thống Hugging Face
-                  trong nhiều ngày không ai hay biết, và chỉ bị phát hiện khi
-                  mối đe dọa đã được kiểm soát.
-                </p>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="./pages/hotnews3.html" class="news-link">
-              <div class="news-card">
-                <h5>
-                  Nhu cầu AI có thể khiến mạng 5G nhiều quốc gia phải thiết kế
-                  lại
-                </h5>
-                <img
-                  src="https://i1-vnexpress.vnecdn.net/2026/07/17/lq-1784221262-4254-1784221320.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=gFScLTkv0cEklNp2REiIIQ"
-                  alt="Hình ảnh tin tức"
-                />
-                <p>
-                  Nhu cầu sử dụng AI đòi hỏi đường tải lên băng thông lớn, trong
-                  khi phần lớn mạng 5G hiện chỉ dành khoảng 10% cho đường tải
-                  lên.
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
+        <div class="row g-4" id="featured-container"></div>
       </div>
     </section>
     <h3 class="big-title">Tin tức hôm nay</h3>
-
     <section class="today-news-section">
       <div class="container">
         <div class="row g-4">
-          <div class="col-md-8">
-            <a href="./pages/todaynews1.html" class="news-link">
-              <div class="today-news-card-left">
-                <img
-                  src="https://i1-vnexpress.vnecdn.net/2026/07/15/lq02525-1784088977-9198-1784089257.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=jlE89_7iMdO0e0H_1v5bbw"
-                  alt="Hình ảnh tin tức"
-                />
-                <div class="today-news-card-left-content">
-                  <h4>Người dùng phàn nàn mô hình của OpenAI tự xóa dữ liệu</h4>
-                  <p>
-                    Một số người dùng cho biết GPT-5.6 Sol, mô hình chủ lực mới
-                    của OpenAI, tự động xóa các tệp tin mà không hỏi ý kiến
-                    trước.
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="./pages/todaynews2.html" class="news-link">
-              <div class="today-news-card-left">
-                <img
-                  src="https://i1-vnexpress.vnecdn.net/2026/07/10/dsc09779-jpg-1783657538-7250-1783658179.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=VNLLoVplb3FZbqO_7Ojz9Q"
-                  alt="Hình ảnh tin tức"
-                />
-                <div class="today-news-card-left-content">
-                  <h4>OpenAI ra tác nhân mới và GPT-5.6</h4>
-                  <p>
-                    OpenAI công bố tác nhân dành cho nhân viên văn phòng ChatGPT
-                    Work, vận hành bằng GPT-5.6 - mô hình AI tiên tiến nhất của
-                    công ty.
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="./pages/todaynews3.html" class="news-link">
-              <div class="today-news-card-left">
-                <img
-                  src="https://i1-vnexpress.vnecdn.net/2026/06/27/openai-thach-thuc-1752491351-2-1272-7134-1782539191.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=gZHUJaA8BL1FWjQIsxDMJg"
-                  alt="Hình ảnh tin tức"
-                />
-                <div class="today-news-card-left-content">
-                  <h4>OpenAI hoãn phát hành GPT-5.6</h4>
-                  <p>
-                    Theo yêu cầu từ chính phủ Mỹ, OpenAI cho biết sẽ hoãn triển
-                    khai rộng rãi mô hình mới GPT-5.6, chỉ cho phép nhóm nhỏ đối
-                    tác truy cập.
-                  </p>
-                </div>
-              </div>
-            </a>
+          <!-- 1. Thêm id="today-news-container" cho phần bên trái -->
+          <div class="col-md-8" id="today-news-container">
+            <!-- Dữ liệu RSS sẽ tự động chèn vào đây -->
           </div>
 
+          <!-- 2. Thêm id="trending-container" cho Sidebar bên phải -->
           <div class="col-md-4">
             <div class="sidebar">
               <h4 class="big-title">Được xem nhiều nhất</h4>
-              <a href="./pages/gamenews1.html" class="news-link">
-                <div class="today-news-card-right">
-                  <div class="today-news-card-right-content">
-                    <h4>
-                      Đề xuất giới hạn trẻ chơi game 60 phút mỗi ngày được ủng
-                      hộ
-                    </h4>
-                    <h6>🕒 27/07 - 500+ lượt xem</h6>
-                  </div>
-                </div>
-              </a>
-              <a href="./pages/todaynews3.html" class="news-link">
-                <div class="today-news-card-right">
-                  <div class="today-news-card-right-content">
-                    <h4>OpenAI hoãn phát hành GPT-5.6</h4>
-                    <h6>🕒 21/07 - 100+ lượt xem</h6>
-                  </div>
-                </div>
-              </a>
-              <a href="./pages/todaynews2.html" class="news-link">
-                <div class="today-news-card-right">
-                  <div class="today-news-card-right-content">
-                    <h4>OpenAI ra tác nhân mới và GPT-5.6</h4>
-                    <h6>🕒 21/07 - 91 lượt xem</h6>
-                  </div>
-                </div>
-              </a>
+              <div id="trending-container">
+                <!-- Dữ liệu RSS sẽ tự động chèn vào đây -->
+              </div>
             </div>
           </div>
         </div>

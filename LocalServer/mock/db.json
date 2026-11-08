@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Laptop Dell",
+      "price": 15000000,
+      "category": "Laptop",
+      "stock": 10
+    },
+    {
+      "id": "2",
+      "name": "iPhone 16",
+      "price": 22000000,
+      "category": "Phone",
+      "stock": 5
+    },
+    {
+      "id": "3",
+      "name": "Samsung Galaxy",
+      "price": 18000000,
+      "category": "Phone",
+      "stock": 8
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Nguyen Van A",
+      "email": "a@gmail.com"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "userId": "1",
+      "productId": "1",
+      "quantity": 2
+    }
+  ]
+}
