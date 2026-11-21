@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sản phẩm cuối khóa</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/b47a1c1ea4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <button id="backToTop" title="Lên đầu trang">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <div class="navbar-wrapper sticky-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary top-navbar">
+        <div class="container top-container">
+          <a class="navbar-brand" href="./index.html">
+            <i class="fa-solid fa-newspaper me-2"></i>OneNews
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#top-navbar"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="top-navbar">
+            
+          <form class="d-flex" id="search-form" role="search">
+            <input
+              class="form-control me-2"
+              id="search-input"
+              type="search"
+              placeholder="Tìm kiếm..."
+              aria-label="Search"
+            />
+
+            <button class="btn btn-outline-success" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            </form>
+            <ul
+              class="navbar-nav ms-auto d-flex align-items-center gap-2 ul-3items"
+              
+            >
+              <li class="nav-item">
+                <button id="button-lightDark" class="btn btn-outline-dark">
+                  🌙
+                </button>
+              </li>
+              <li class="nav-item" id="user-info">
+                <a class="nav-link" href="login.html"
+                  ><i class="fa-solid fa-right-to-bracket me-1"></i> Đăng nhập</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary bottom-navbar">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#bottom-navbar"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse bottom-menu" id="bottom-navbar">
+            <ul class="navbar-nav gap-3">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"
+                  ><i class="fa-solid fa-house me-1"></i> Trang chủ</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Danh mục
+                </a>
+
+                <div class="dropdown-menu category-mega-menu p-3">
+                  <div class="row g-3">
+
+                    <div class="col-4">
+                      <h6>Xã hội</h6>
+                      <a class="dropdown-item" href="./category.html?type=thoisu">Thời sự</a>
+                      <a class="dropdown-item" href="./category.html?type=thegioi">Thế giới</a>
+                      <a class="dropdown-item" href="./category.html?type=phapluat">Pháp luật</a>
+                      <a class="dropdown-item" href="./category.html?type=gocnhin">Góc nhìn</a>
+                      <a class="dropdown-item" href="./category.html?type=ykien">Ý kiến</a>
+                    </div>
+
+                    <div class="col-4">
+                      <h6>Kinh tế</h6>
+                      <a class="dropdown-item" href="./category.html?type=kinhdoanh">Kinh doanh</a>
+                      <a class="dropdown-item" href="./category.html?type=batdongsan">Bất động sản</a>
+                    </div>
+
+                    <div class="col-4">
+                      <h6>Công nghệ - Phương tiện</h6>
+                      <a class="dropdown-item" href="./category.html?type=congnghe">Khoa học công nghệ</a>
+                      <a class="dropdown-item" href="./category.html?type=xe">Xe</a>
+                    </div>
+
+                    <div class="col-4">
+                      <h6>Văn hóa - Giải trí</h6>
+                      <a class="dropdown-item" href="./category.html?type=giaitri">Giải trí</a>
+                      <a class="dropdown-item" href="./category.html?type=dulich">Du lịch</a>
+                    </div>
+
+                    <div class="col-4">
+                      <h6>Đời sống</h6>
+                      <a class="dropdown-item" href="./category.html?type=suckhoe">Sức khỏe</a>
+                      <a class="dropdown-item" href="./category.html?type=doisong">Đời sống</a>
+                      <a class="dropdown-item" href="./category.html?type=tamsu">Tâm sự</a>
+                    </div>
+
+                    <div class="col-4">
+                      <h6>Giáo dục</h6>
+                      <a class="dropdown-item" href="./category.html?type=giaoduc">Giáo dục</a>
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html"
+                  ><i class="fa-solid fa-envelope me-1"></i> Liên hệ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html"
+                  ><i class="fa-solid fa-circle-info me-1"></i> Giới thiệu</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./favorite.html">
+                  ❤️ Yêu thích
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <main class="container my-5">
+        <h2 class="big-title">Thông tin tài khoản</h2>
+
+        <div class="profile-container">
+            <div class="profile-avatar">
+            <i class="fa-solid fa-user"></i>
+            </div>
+
+            <h3 id="profile-name">Đang tải...</h3>
+            <p id="profile-email"></p>
+
+            <hr>
+
+            <div class="profile-info">
+            <p>
+                <strong>Họ và tên:</strong>
+                <span id="profile-username"></span>
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                <span id="profile-email-detail"></span>
+            </p>
+
+            <p>
+                <strong>Số bài viết yêu thích:</strong>
+                <span id="profile-favorite-count">0</span>
+            </p>
+            </div>
+        </div>
+        </main>
+    <footer>
+      <div class="container">
+        <div class="row footer-row justify-content-center">
+          <div class="col-md-4">
+            <h4 class="footer-logo">OneNews</h4>
+            <h5 class="footer-description">
+              "Website tin tức công nghệ, AI và Game."
+            </h5>
+          </div>
+          <div class="col-md-4">
+            <h4>Liên kết</h4>
+            <a href="./index.html">Trang chủ</a> <br />
+            <a href="./category/latest.html">Danh mục</a> <br />
+            <a href="./contact.html">Liên hệ</a> <br /> 
+            <a href="./about.html">Giới thiệu</a> <br />
+          </div>
+          <div class="col-md-4">
+            <h4>Liên hệ</h4>
+            <p><i class="fa-solid fa-envelope"></i> onenews@gmail.com</p>
+            <p><i class="fa-brands fa-facebook"></i> OneNews</p>
+            <p><i class="fa-brands fa-github"></i> chessishard-bug</p>
+            <p>
+              Địa chỉ:<br />
+              1 Tô Ký, Trung Mỹ Tây,<br />
+              Quận 12, TP.HCM
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <h5 class="copyrights">©2026 OneNews. All rights reserved.</h5>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/script.js"></script>  
+  <script src="./js/profile.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</html>

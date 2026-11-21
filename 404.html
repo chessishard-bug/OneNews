@@ -18,6 +18,7 @@
     <button id="backToTop" title="Lên đầu trang">
       <i class="fa-solid fa-arrow-up"></i>
     </button>
+    <div class="navbar-wrapper sticky-top">
     <nav class="navbar navbar-expand-lg bg-body-tertiary top-navbar">
       <div class="container top-container">
         <a class="navbar-brand" href="./index.html">
@@ -35,37 +36,33 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="top-navbar">
-          <form
-            class="d-flex"
-            role="search"
-            onsubmit="return chucNangPhatTrien();"
-          >
+          
+          <form class="d-flex" id="search-form" role="search">
             <input
               class="form-control me-2"
+              id="search-input"
               type="search"
               placeholder="Tìm kiếm..."
               aria-label="Search"
             />
+
             <button class="btn btn-outline-success" type="submit">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
+
           <ul
             class="navbar-nav ms-auto d-flex align-items-center gap-2 ul-3items"
+            
           >
             <li class="nav-item">
               <button id="button-lightDark" class="btn btn-outline-dark">
                 🌙
               </button>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="user-info">
               <a class="nav-link" href="login.html"
                 ><i class="fa-solid fa-right-to-bracket me-1"></i> Đăng nhập</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="register.html">
-                <i class="fa-solid fa-user-plus me-1"></i> Đăng kí</a
               >
             </li>
           </ul>
@@ -95,33 +92,58 @@
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="./category/latest.html"
+                href="#"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <i class="fa-solid fa-list me-1"></i> Danh mục
+                Danh mục
               </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="./category/latest.html"
-                    ><i class="fa-solid fa-bolt me-2 text-warning"></i>Tin mới
-                    nhất</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./category/ai.html"
-                    ><i class="fa-solid fa-robot me-2 text-info"></i>AI & Công
-                    nghệ</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./category/game.html"
-                    ><i class="fa-solid fa-gamepad me-2 text-success"></i
-                    >Game</a
-                  >
-                </li>
-              </ul>
+
+              <div class="dropdown-menu category-mega-menu p-3">
+                <div class="row g-3">
+
+                  <div class="col-4">
+                    <h6>Xã hội</h6>
+                    <a class="dropdown-item" href="./category.html?type=thoisu">Thời sự</a>
+                    <a class="dropdown-item" href="./category.html?type=thegioi">Thế giới</a>
+                    <a class="dropdown-item" href="./category.html?type=phapluat">Pháp luật</a>
+                    <a class="dropdown-item" href="./category.html?type=gocnhin">Góc nhìn</a>
+                    <a class="dropdown-item" href="./category.html?type=ykien">Ý kiến</a>
+                  </div>
+
+                  <div class="col-4">
+                    <h6>Kinh tế</h6>
+                    <a class="dropdown-item" href="./category.html?type=kinhdoanh">Kinh doanh</a>
+                    <a class="dropdown-item" href="./category.html?type=batdongsan">Bất động sản</a>
+                  </div>
+
+                  <div class="col-4">
+                    <h6>Công nghệ - Phương tiện</h6>
+                    <a class="dropdown-item" href="./category.html?type=congnghe">Khoa học công nghệ</a>
+                    <a class="dropdown-item" href="./category.html?type=xe">Xe</a>
+                  </div>
+
+                  <div class="col-4">
+                    <h6>Văn hóa - Giải trí</h6>
+                    <a class="dropdown-item" href="./category.html?type=giaitri">Giải trí</a>
+                    <a class="dropdown-item" href="./category.html?type=dulich">Du lịch</a>
+                  </div>
+
+                  <div class="col-4">
+                    <h6>Đời sống</h6>
+                    <a class="dropdown-item" href="./category.html?type=suckhoe">Sức khỏe</a>
+                    <a class="dropdown-item" href="./category.html?type=doisong">Đời sống</a>
+                    <a class="dropdown-item" href="./category.html?type=tamsu">Tâm sự</a>
+                  </div>
+
+                  <div class="col-4">
+                    <h6>Giáo dục</h6>
+                    <a class="dropdown-item" href="./category.html?type=giaoduc">Giáo dục</a>
+                  </div>
+
+                </div>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./contact.html"
@@ -133,11 +155,16 @@
                 ><i class="fa-solid fa-circle-info me-1"></i> Giới thiệu</a
               >
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./favorite.html">
+                ❤️ Yêu thích
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-
+    </div>
     <div class="container my-5">
       <div class="404-page text-center py-5">
         <h2 style="font-weight: 900; font-size: 5rem">404</h2>
